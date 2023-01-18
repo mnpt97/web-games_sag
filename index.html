@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <div id="game-field">
+
+        <div id="current-player-wrapper">
+            <div id="curr-player-color" class=""></div>
+            <div id="curr-player-text">ist dran!</div>
+        </div>
+
+        <table>
+            <tr class="row1">
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+            </tr>
+            <tr class="row2">
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+            </tr>
+            <tr class="row3">
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+                <td class="cell">
+                    <div class="free"></div>
+                </td>
+            </tr>
+        </table>
+
+        <div id="notification-wrapper">
+            <div id="notification">
+                <div id="winner-player-color" class=""></div>
+                <h1 id="notification-text"></h1>
+                <button id="restart-button" onclick="resetAndStartGame()">Nochmal</button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
